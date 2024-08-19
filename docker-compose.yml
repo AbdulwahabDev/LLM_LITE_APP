@@ -15,7 +15,7 @@ services:
     build:
         context: backend/database/PostgreSQL/docker/
         dockerfile: Dockerfile
-    env_file: backend/database/PostgreSQL/docker/.env
+    env_file: backend/database/PostgreSQL/docker/.env.local
     ports: 
         - '5321:5432'        
     volumes: 
