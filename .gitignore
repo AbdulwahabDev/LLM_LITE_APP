@@ -1,0 +1,18 @@
+#VENV
+.env/*
+
+#.env Files
+.env*
+
+
+
+# docker volumes
+backend/database/PostgreSQL/docker/volumes/postgresql_data/*
+backend/database/qdrant/docker/volumes/qdrant_data/*
+
+
+
+
+# python no needed 
+*.pyc
+*-checkpoint.ipynb

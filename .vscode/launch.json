@@ -1,0 +1,39 @@
+
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Compound", 
+            "configurations": [ 
+                                "rag_app",
+                            ] 
+        }
+    ], 
+    "configurations": [     
+ 
+        // rag_app
+        {
+            "name": "rag_app", 
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn", 
+            "envFile": "${workspaceFolder}/backend/python/rag_app/.env.local",  
+            "args": [
+                "backend.python.rag_app.app.main:app","--port","9876","--reload"
+            ], 
+            "consoleTitle": "app-local",
+            "python": "${workspaceFolder}/.env/bin/python" 
+        },
+        // rag_app-Jupyter
+        {
+            "name": "rag_app-Jupyter", 
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.env/bin/jupyter-notebook",
+            "cwd": "${workspaceFolder}/",
+            "python": "${workspaceFolder}/.env/bin/python",
+            "consoleTitle": "rag_app-Jupyter", 
+        }, 
+ 
+    ]
+}

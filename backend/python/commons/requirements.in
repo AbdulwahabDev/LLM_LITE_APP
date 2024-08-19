@@ -1,0 +1,18 @@
+# Helpers
+notebook
+pandas
+xlsxwriter
+ydata-profiling
+
+# FastAPI
+uvicorn
+fastapi
+
+# DB
+qdrant-client
+
+# LLM
+sentence-transformers
+faiss-cpu
+langchain_community
+openai
