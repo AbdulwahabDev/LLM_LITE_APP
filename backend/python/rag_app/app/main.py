@@ -7,12 +7,15 @@ sys.path.append(os.path.abspath('backend/python/rag_app'))           # to see fr
 
 
 from fastapi import FastAPI
-from app.api.NeuralSearcher_test.routes import NeuralSearcher_test_router_
+from app.api.check.routes import check_router_
+from app.api.NeuralSearcher.routes import NeuralSearcher_router_
 
 app = FastAPI( title=f"RAG APP APIs",  )
 
 # Include router modules passed to the function
-routers_modules=[ NeuralSearcher_test_router_, ]
+routers_modules=[ check_router_,
+                 NeuralSearcher_router_, ]
+
 for router_module in routers_modules:
     app.include_router(router_module)
 
