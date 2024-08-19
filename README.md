@@ -2,6 +2,11 @@
 
 
 ## Prerequisites
+___
+**YOU MUST rename any file with `.TEMPLATE_env` to `.env.local`, and ensure that you update the values correctly if needed.**
+___
+
+
 1. **Install Python**
    Ensure that Python is installed on your system. You can install Python using one of the following methods:
    - **Official Website**: [Download Python](https://www.python.org/downloads/)
