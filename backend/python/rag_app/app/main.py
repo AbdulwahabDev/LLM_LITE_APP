@@ -14,7 +14,8 @@ app = FastAPI( title=f"RAG APP APIs",  )
 
 # Include router modules passed to the function
 routers_modules=[ check_router_,
-                 NeuralSearcher_router_, ]
+                 NeuralSearcher_router_, 
+                 ]
 
 for router_module in routers_modules:
     app.include_router(router_module)

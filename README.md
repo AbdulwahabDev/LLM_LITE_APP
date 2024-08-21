@@ -51,7 +51,7 @@ pip install -r backend/python/commons/requirements.in
 ```
 
 ```bash
-docker-compose up rag_app qdrant_db pgsql  --build
+docker compose up rag_app qdrant_db pgsql  --build
 
 ```
 
